@@ -2,7 +2,7 @@ load UATC-DenseNet.mat
 Classes = categorical(["Noise","T01", "T02", "T03", "T04", "T05", "T06", "T07", "T08",...
     "T09", "T10","T11"]);
 % Download dataset via following link:
-% https://o365kumoh-my.sharepoint.com/personal/thienht_office_kumoh_ac_kr/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fthienht%5Foffice%5Fkumoh%5Fac%5Fkr%2FDocuments%2FUnderwater%20Acoustic%20Target%20Classification%2FDataset%2Ezip&parent=%2Fpersonal%2Fthienht%5Foffice%5Fkumoh%5Fac%5Fkr%2FDocuments%2FUnderwater%20Acoustic%20Target%20Classification&originalPath=aHR0cHM6Ly9vMzY1a3Vtb2gtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvdGhpZW5odF9vZmZpY2Vfa3Vtb2hfYWNfa3IvRWRvX2UyX3lydnhQdUdnR1REWlZHU1FCOE5qeDZyelV3dVB4WkFTeTRoUkdkUT9ydGltZT16UFZBTG1aSjJFZw
+% https://o365kumoh-my.sharepoint.com/personal/thienht_office_kumoh_ac_kr/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fthienht%5Foffice%5Fkumoh%5Fac%5Fkr%2FDocuments%2FUnderwater%20Acoustic%20Target%20Classification%2FDataset%2Ezip&parent=%2Fpersonal%2Fthienht%5Foffice%5Fkumoh%5Fac%5Fkr%2FDocuments%2FUnderwater%20Acoustic%20Target%20Classification&originalPath=aHR0cHM6Ly9vMzY1a3Vtb2gtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvdGhpZW5odF9vZmZpY2Vfa3Vtb2hfYWNfa3IvRWRvX2UyX3lydnhQdUdnR1REWlZHU1FCOE5qeDZyelV3dVB4WkFTeTRoUkdkUT9ydGltZT0tN2owanlxNDJFZw
 imds = imageDatastore('Dataset','IncludeSubfolders',true,...
     'LabelSource','foldernames','FileExtensions',{'.mat'});
 % Split dataset into 2 sub-sets of training 70% and testing 30%
